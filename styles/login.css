@@ -1,0 +1,22 @@
+.login-container {
+  width: 30%;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: var(--pure-white);
+  border-radius: var(--radius);
+  height: 100%;
+}
+
+.login-container .input-container {
+  width: 100%;
+}
+
+.login-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-actions .btn {
+  width: 100%;
+  max-width: 100%;
+}

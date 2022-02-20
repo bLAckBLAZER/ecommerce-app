@@ -1,0 +1,23 @@
+@import url(./login.css);
+@import url(./flex-util.css);
+
+body {
+  background-color: #f7f7f7;
+}
+
+.navbar {
+  background-color: var(--pure-white);
+  justify-content: space-around;
+  padding: 0;
+}
+
+.nav-actions {
+  color: var(--secondary-color);
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.navbar .input {
+  align-self: center;
+  width: 20%;
+}

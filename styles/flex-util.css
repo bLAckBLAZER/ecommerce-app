@@ -1,0 +1,16 @@
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+  flex: 1;
+}
+
+.flex-ctr-vt {
+  align-items: center;
+}
+
+.flex-ctr-hr {
+  justify-content: center;
+}
