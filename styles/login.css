@@ -1,10 +1,12 @@
 .login-container {
+  display: flex;
+  flex-direction: column;
   width: 30%;
+  min-width: fit-content;
   margin: 5rem auto;
   padding: 2rem;
   background-color: var(--pure-white);
   border-radius: var(--radius);
-  height: 100%;
 }
 
 .login-container .input-container {
@@ -13,10 +15,24 @@
 
 .login-actions {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 0.25rem 0;
 }
 
 .login-actions .btn {
   width: 100%;
   max-width: 100%;
+}
+
+.action-item {
+  flex: 1;
+}
+
+.login-container .btn,
+.login-container .input-container {
+  margin: 0;
+}
+
+.action-item a {
+  color: var(--primary-color);
 }
