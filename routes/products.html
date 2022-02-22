@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://subtleui.netlify.app/styles/styles.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/12af55b294.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/products.css" />
+    <title>Sneakoholics | Products</title>
+  </head>
+  <body>
+    <nav class="navbar fixed">
+      <a href="#" class="nav-heading">Sneakoholics</a>
+      <input
+        type="text"
+        class="input"
+        placeholder="What do you want to wear today?"
+      />
+      <ul class="nav-actions">
+        <li class="nav-action-item">
+          <button class="btn btn-primary">
+            <a href="./login.html">Login</a>
+          </button>
+        </li>
+        <li class="nav-action-item">
+          <div class="badge-container">
+            <i class="fas fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            <span class="badge badge-icon">10</span>
+          </div>
+        </li>
+        <li class="nav-action-item">
+          <div class="badge-container">
+            <i class="far fa-heart fa-2x"></i>
+            <span class="badge badge-icon">10</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <aside class="filters">
+        <ul class="filter-list">
+          <li class="filter-item">
+            <div class="flex justify-between align-ctr">
+              <div class="filter-heading">Filters</div>
+              <button class="btn btn-link">Clear</button>
+            </div>
+          </li>
+          <li class="filter-item">
+            <div class="filter-heading">Price</div>
+
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  id="below-1000"
+                  name="price-range"
+                  value="below-1000"
+                />
+                <label for="below-1000" class="filter-subheading"
+                  >Below 1000</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="bet-1000-3000"
+                  name="price-range"
+                  value="bet-1000-3000"
+                />
+                <label for="bet-1000-3000" class="filter-subheading"
+                  >1000 - 3000</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="bet-3000-7000"
+                  name="price-range"
+                  value="bet-3000-7000"
+                />
+                <label for="bet-3000-7000" class="filter-subheading"
+                  >3000-7000</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="above-8000"
+                  name="price-range"
+                  value="above-8000"
+                />
+                <label for="above-8000" class="filter-subheading"
+                  >Above 8000</label
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="filter-item">
+            <div class="filter-heading">Category</div>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  id="sneaker"
+                  name="category"
+                  value="sneaker"
+                />
+                <label for="sneaker" class="filter-subheading">Sneakers</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="sandals"
+                  name="category"
+                  value="sandals"
+                />
+                <label for="sandals" class="filter-subheading">Sandals</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="flip-flops"
+                  name="category"
+                  value="flip-flops"
+                />
+                <label for="flip-flops" class="filter-subheading"
+                  >Flip-flops</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="jordans"
+                  name="category"
+                  value="jordans"
+                />
+                <label for="jordans" class="filter-subheading">Jordans</label>
+              </li>
+            </ul>
+          </li>
+
+          <li class="filter-item">
+            <div class="filter-heading">Rating</div>
+            <ul>
+              <li>
+                <input type="radio" id="4-plus" name="rating" value="4-plus" />
+                <label for="4-plus" class="filter-subheading"
+                  >4 stars & above</label
+                >
+              </li>
+              <li>
+                <input type="radio" id="3-plus" name="rating" value="3-plus" />
+                <label for="3-plus" class="filter-subheading"
+                  >3 stars & above</label
+                >
+              </li>
+              <li>
+                <input type="radio" id="2-plus" name="rating" value="2-plus" />
+                <label for="2-plus" class="filter-subheading"
+                  >2 stars & above</label
+                >
+              </li>
+              <li>
+                <input type="radio" id="1-plus" name="rating" value="1-plus" />
+                <label for="1-plus" class="filter-subheading"
+                  >1 stars & above</label
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="filter-item">
+            <div class="filter-heading">Sort by</div>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  id="descending"
+                  name="sorting"
+                  value="descending"
+                />
+                <label for="descending" class="filter-subheading"
+                  >Price - High to Low</label
+                >
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="ascending"
+                  name="sorting"
+                  value="ascending"
+                />
+                <label for="ascending" class="filter-subheading"
+                  >Price - Low to High</label
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <div class="product-heading">
+        Showing all products
+        <span class="product-subheading">(20 products per page)</span>
+      </div>
+      <div class="product-grid">
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card-ecom">
+            <div class="card-body">
+              <div class="card-img">
+                <img
+                  src="../assets/images/sneaker.jpg"
+                  alt="airmax one"
+                  class="img-res"
+                />
+              </div>
+              <div class="card-heading">
+                <h2 class="card-title">Airmax 1</h2>
+                <h4 class="card-subtitle">Nike</h4>
+              </div>
+              <p class="card-text">Rs. 6999/-</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+
+              <div class="card-icons">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
