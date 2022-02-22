@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://subtleui.netlify.app/styles/styles.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/12af55b294.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/cartPage.css" />
+    <title>Sneakoholics | Cart</title>
+  </head>
+  <body>
+    <nav class="navbar fixed">
+      <a href="#" class="nav-heading">Sneakoholics</a>
+      <input
+        type="text"
+        class="input"
+        placeholder="What do you want to wear today?"
+      />
+      <ul class="nav-actions">
+        <li class="nav-action-item">
+          <button class="btn btn-primary">
+            <a href="./logout.html">Logout</a>
+          </button>
+        </li>
+        <li class="nav-action-item">
+          <div class="badge-container">
+            <i class="fas fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            <span class="badge badge-icon">10</span>
+          </div>
+        </li>
+        <li class="nav-action-item">
+          <div class="badge-container">
+            <i class="far fa-heart fa-2x"></i>
+            <span class="badge badge-icon">10</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="h3 txt-center">My Cart</div>
+        <hr />
+        <div class="cart-container">
+          <div class="cart-items">
+            <div class="card card-ecom card-horizontal card-shadow">
+              <div class="card-img">
+                <img
+                  src="https://subtleui.netlify.app/images/sneaker.jpg"
+                  alt=""
+                  class="img-res"
+                />
+              </div>
+
+              <div class="card-info">
+                <div class="card-heading">
+                  <h2 class="card-title">Airmax 1</h2>
+                  <h4 class="card-subtitle">Nike</h4>
+                </div>
+
+                <div class="card-price flex align-ctr">
+                  <div class="h3">₹ 6999</div>
+                  <div class="txt-strike">₹ 8999</div>
+                </div>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+                  cupiditate a explicabo nobis tempore quis rerum architecto
+                  eveniet cum nesciunt accusantium iste ex mollitia quos
+                  deleniti vel, numquam dolor! Odit.
+                </p>
+
+                <div class="card-qty flex align-ctr">
+                  <div class="h4">Qty:</div>
+
+                  <div class="card-qty-actions">
+                    <i class="fas fa-minus qty-action"></i>
+                    <input type="number" class="input-qty" value="1" />
+                    <i class="fas fa-plus qty-action"></i>
+                  </div>
+                </div>
+
+                <div class="card-footer">
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Remove from cart</button>
+                    <button class="btn btn-secondary">Move to wishlist</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-ecom card-horizontal card-shadow">
+              <div class="card-img">
+                <img
+                  src="https://subtleui.netlify.app/images/sneaker.jpg"
+                  alt=""
+                  class="img-res"
+                />
+              </div>
+
+              <div class="card-info">
+                <div class="card-heading">
+                  <h2 class="card-title">Airmax 1</h2>
+                  <h4 class="card-subtitle">Nike</h4>
+                </div>
+
+                <div class="card-price flex align-ctr">
+                  <div class="h3">₹ 6999</div>
+                  <div class="txt-strike">₹ 8999</div>
+                </div>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+                  cupiditate a explicabo nobis tempore quis rerum architecto
+                  eveniet cum nesciunt accusantium iste ex mollitia quos
+                  deleniti vel, numquam dolor! Odit.
+                </p>
+
+                <div class="card-qty flex align-ctr">
+                  <div class="h4">Qty:</div>
+
+                  <div class="card-qty-actions">
+                    <i class="fas fa-minus qty-action"></i>
+                    <input type="number" class="input-qty" value="1" />
+                    <i class="fas fa-plus qty-action"></i>
+                  </div>
+                </div>
+
+                <div class="card-footer">
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Remove from cart</button>
+                    <button class="btn btn-secondary">Move to wishlist</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-pricing">
+            <div class="price-heading">Price Details</div>
+            <hr />
+            <ul class="flex flex-col">
+              <li class="flex justify-between price-subheading">
+                <div>Price(2 Items)</div>
+                <div>₹ 5999</div>
+              </li>
+              <li class="flex justify-between price-subheading">
+                <div>Discount</div>
+                <div>- ₹ 999</div>
+              </li>
+              <li class="flex justify-between price-subheading">
+                <div>Delivery Charges</div>
+                <div>₹ 200</div>
+              </li>
+            </ul>
+            <hr />
+            <div class="flex justify-between">
+              <div class="price-heading">Total Amount</div>
+              <div class="price-heading">₹ 5200</div>
+            </div>
+            <hr />
+            <div class="price-subheading">
+              You will save ₹ 999 on this order!
+            </div>
+
+            <button class="btn btn-primary">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
