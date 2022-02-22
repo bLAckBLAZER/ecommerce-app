@@ -44,7 +44,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(13.125rem, 1fr));
   padding-left: 20%;
-  grid-gap: 0.5rem;
+  gap: 0.5rem;
 }
 
 .product-heading {
