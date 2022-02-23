@@ -35,8 +35,8 @@
 
 .category {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
